@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="helpText" type="Boolean" default="Loading..."/>
+    <aura:attribute name="size" type="String" default="medium"/>
+    <aura:attribute name="variant" type="String" default="braand"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name="spinnerClass" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <div class="spinner">
+        <lightning:spinner class="spinnermedium" title="{!v.helpText}" size="{!v.size}" variant="{!v.variant}" data-text="{!v.helpText}"></lightning:spinner>
+    </div>
+</aura:component>	

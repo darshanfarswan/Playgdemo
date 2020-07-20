@@ -1,0 +1,26 @@
+.THIS .spinner-small .spinner::after {
+    position: absolute;
+    content: 'Hello';
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    top: calc(50% + 1em);
+}
+
+.THIS .spinner.spinnermedium::after {
+    position: absolute;
+    content: 'Hello';
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    top: calc(50% + 2em);
+}
+
+.THIS .spinner-large .spinner::after {
+    position: absolute;
+    content: 'Hello';
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    top: calc(50% + 3em);
+}
